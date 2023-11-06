@@ -10,9 +10,7 @@ export class SocialNetworkQueries {
     let mostLikedBooks = {};
 
     try {
-      userWithFriendsBooksLikes = await this.fetchCurrentUser().catch(t=> {
-        console.log(v)
-      });
+      userWithFriendsBooksLikes = await this.fetchCurrentUser().catch(console.log)
     } catch (error) {
         console.log(error);
 
